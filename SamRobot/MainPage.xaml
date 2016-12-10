@@ -1,0 +1,43 @@
+﻿<Page
+	x:Class="SamRobot.MainPage"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:local="using:SamRobot"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d">
+
+	<Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="auto" />
+			<RowDefinition Height="*" />
+		</Grid.RowDefinitions>
+
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="*" />
+		</Grid.ColumnDefinitions>
+
+		<StackPanel Grid.Row="0" Orientation="Horizontal" Background="{StaticResource SystemControlBackgroundAccentBrush}" Padding="10">
+			<TextBlock VerticalAlignment="Bottom" FontWeight="Bold" Text="Sam Robot"/>
+		</StackPanel>
+
+		<StackPanel Grid.Row="1" Orientation="Vertical" Padding="37">
+			<Image x:Name="image" Height="70" VerticalAlignment="Top" Width="100" Source="Assets/Wide310x150Logo.png"/>
+			<TextBlock x:Name="txtOutput" TextWrapping="Wrap" Text="Hi my name is Sam!" VerticalAlignment="Top" Padding="12" Margin="4,10,4,0"/>
+			<TextBlock x:Name="txtOutputTwo" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Padding="12" Margin="4,10,4,0" TextAlignment="Right"/>
+		</StackPanel>
+
+		<StackPanel Grid.Row="1" VerticalAlignment="Bottom" KeyDown="txtInputKey">
+			<TextBox x:Name="txtInput" TextWrapping="NoWrap" Text="My name is ..." VerticalAlignment="Top" Margin="0,0,0,0"/>
+			<CommandBar>
+				<CommandBar.Content>
+					<Grid/>
+				</CommandBar.Content>
+				<AppBarButton Icon="Send" Label="Send Text" Click="SendText" />
+				<AppBarButton Icon="Delete" Label="Delete Text" Click="Delete" />
+				<AppBarButton Icon="Page2" Label="About" Click="About" />
+			</CommandBar>
+
+		</StackPanel>
+	</Grid>
+</Page>
