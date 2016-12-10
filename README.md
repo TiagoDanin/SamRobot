@@ -1,6 +1,8 @@
 ## SamRobot
 [UWP] A very simple chatbot, your name is Sam!
 
+![SamRobot](https://raw.githubusercontent.com/TiagoDanin/SamRobot/master/image.png "Sam Robot")
+
 ## Store
 SOON
 
