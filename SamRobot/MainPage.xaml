@@ -22,7 +22,7 @@
 		</StackPanel>
 
 		<StackPanel Grid.Row="1" Orientation="Vertical" Padding="37">
-			<Image x:Name="image" Height="70" VerticalAlignment="Top" Width="100" Source="Assets/Wide310x150Logo.png"/>
+			<Image x:Name="image" Height="70" VerticalAlignment="Top" Width="100" Source="Assets/SamApp.png"/>
 			<TextBlock x:Name="txtOutput" TextWrapping="Wrap" Text="Hi my name is Sam!" VerticalAlignment="Top" Padding="12" Margin="4,10,4,0"/>
 			<TextBlock x:Name="txtOutputTwo" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Padding="12" Margin="4,10,4,0" TextAlignment="Right"/>
 		</StackPanel>
