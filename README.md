@@ -14,4 +14,4 @@ Windows 10 and Windows 10 Mobile
 GNU AFFERO GENERAL PUBLIC LICENSE V3 [(AGPLv3)](https://github.com/TiagoDanin/SamRobot/blob/master/LICENSE)
 
 ---
->Copyright (c) 2016 Tiago Danin
+> By Tiago Danin

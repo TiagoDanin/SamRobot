@@ -18,6 +18,7 @@ using Windows.System.Profile;
 using Windows.Security.ExchangeActiveSyncProvisioning;
 using Windows.UI.ViewManagement;
 using Windows.UI;
+using Windows.ApplicationModel;
 
 namespace SamRobot
 { 
@@ -101,7 +102,11 @@ namespace SamRobot
 
 		private void About(object sender, RoutedEventArgs e)
 		{
-			string textAbout = "I'm Sam a chatbot \nDeveloped by Tiago Danin \nChatbot API by Program-o.com \nGithub TiagoDanin/SamRobot";
+			Package package = Package.Current;
+			PackageId packageId = package.Id;
+			PackageVersion version = packageId.Version;
+
+			string textAbout = $"I'm Sam a chatbot \nDeveloped by Tiago Danin \nChatbot API by Program-o.com \nGithub TiagoDanin/SamRobot \nVersion {version.Major}.{version.Minor}.{version.Build}";
 			txtOutputTwo.Text = "";
 			txtOutput.Text = textAbout;
 		}
